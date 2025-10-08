@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd /usr/local/bin/cpputilities/bin
+if [ -e "main" ]; then
+    echo "Launch begins..."
+    ./main
+else
+    echo "Binary file not found"
+fi
