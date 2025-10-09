@@ -5,6 +5,7 @@
 #include <string>
 #include "scr/cpp/math.h"
 #include "scr/cpp/time.h"
+#include "scr/cpp/rand.h"
 
 using namespace std;
 
@@ -14,6 +15,10 @@ int help() {
     cout << "· sum >> sum of numbers" << endl;
     cout << "· stopw >> stopwatch" << endl;
     cout << "· timer >> timer" << endl;
+    cout << "· unixt >> UNIX time" << endl;
+    cout << "· date >> current date" << endl;
+    cout << "· randi >> random integer" << endl;
+    cout << "· randf >> random float number" << endl;
 
     return 0;
 }
@@ -40,6 +45,14 @@ int main() {
             stopw();
         } else if (service == "timer") {
             timer();
+        } else if (service == "unixt") {
+            unixTime();
+        } else if (service == "date") {
+            date();
+        } else if (service == "randi") {
+            irandom();
+        } else if (service == "randf") {
+            frandom();
         } else {
             cout << "We did not find this service(" << endl;
         }

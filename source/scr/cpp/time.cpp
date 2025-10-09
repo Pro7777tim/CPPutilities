@@ -10,6 +10,7 @@
 #include <atomic>
 #include <unistd.h>
 #include <sys/select.h>
+#include <ctime>
 
 using namespace std;
 
@@ -164,4 +165,18 @@ void timer() {
         input_thread.join();
     }
     cout << endl;
+}
+
+void unixTime () {
+    auto now = chrono::system_clock::now();
+    auto timestamp = chrono::system_clock::to_time_t(now);
+
+    cout << "UNIX time: " << timestamp << endl;
+}
+
+void date () {
+    auto now = chrono::system_clock::now();
+    time_t time_now = chrono::system_clock::to_time_t(now);
+
+    cout << "Current date: " << ctime(&time_now);
 }

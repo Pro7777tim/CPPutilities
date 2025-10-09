@@ -14,5 +14,5 @@ if [ -e "../bin/main" ]; then
 else
     echo "Starting compilation..."
 fi
-g++ ../source/main.cpp ../source/scr/cpp/math.cpp ../source/scr/cpp/time.cpp -o ../bin/main
+g++ ../source/main.cpp ../source/scr/cpp/math.cpp ../source/scr/cpp/time.cpp ../source/scr/cpp/rand.cpp -o ../bin/main
 

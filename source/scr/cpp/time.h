@@ -3,5 +3,7 @@
 
 void stopw ();
 void timer ();
+void unixTime ();
+void date ();
 
 #endif
