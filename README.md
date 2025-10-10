@@ -2,7 +2,8 @@
 ## Many useful utilities in one place!
 ### Dependencies:
 **· All programming languages ​​used (preferably the latest versions) and their standard libraries.\
-· Linux / Unix**
+· Linux / Unix
+· makepkg (for arch build)**
 ***
 ### Run:
 **· Download the source code.\
